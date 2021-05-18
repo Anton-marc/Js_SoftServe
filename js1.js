@@ -1,6 +1,6 @@
 // task2
 console.log("Fesenko");
-task3
+// task3
 let x;
 let y;
 x = 10;
