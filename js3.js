@@ -61,9 +61,6 @@ findMin(12, 14, 4, -4, 0.2);
 function  findUnique(arr){
     for (let i = 0; i < arr.length-1; i++) {
         for (let x = i+1; x < arr.length; x++) {
-            console.log(arr[i]);
-            console.log(arr[x]);
-            console.log('=======');
             if (arr[i]== arr[x]){return false}
         }
     }
