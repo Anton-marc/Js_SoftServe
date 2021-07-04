@@ -1,0 +1,242 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main_block_items_customization_teapot_onOff>div, .main_block_items_customization_lighting_onOff>div, .main_block_items_customization_garage_onOff>div{
+	margin-bottom: 5px;
+}
+.main {
+    background: url(../images/backimage.jpg) no-repeat;
+    /* height: 736px; */
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 107px;
+    height: 100%;
+}
+.main_block {
+    width: 801px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 100px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background: transparent;
+	padding-top: 50px;
+	display: flex;
+}
+.main_block_items{
+	position: relative;
+}
+.main_block_items_customization_teapot{
+	display: none;
+}
+#openCustomize{
+	cursor: pointer;
+}
+.main_block_items_customization_teapot{
+	background: radial-gradient(black, transparent);
+	color: white;
+	position: absolute;
+    width: 185px;
+    height: 182px;
+	z-index: 50;
+	border-radius: 9%;
+    padding: 10px;
+}
+.main_block_items_customization_teapot>div{
+	padding:  5px 0;
+}
+.main_block_items_customization_teapot_temperatue{
+	display: flex;
+}
+.brightness_color{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+.brightness_color #teapotRed{
+	background: red;
+}
+.brightness_color #teapotPurple{
+	background: purple;
+}
+.brightness_color #teapotGreen{
+	background: green;
+}
+.brightness_color #teapotBlue{
+	background: blue;
+}
+.brightness_color > div{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 2px;
+
+}
+/* onOff */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	width: 50px;
+    height: 20px;
+  }
+  
+  .slider:before {
+	position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+/* onOff-end */
+.main_block_items_customization_lighting {
+    background: radial-gradient(black, transparent);
+    color: white;
+    position: absolute;
+    width: 185px;
+    height: 182px;
+    z-index: 50;
+    border-radius: 9%;
+    padding: 10px;
+}
+.main_block_items_customization_garage {
+    background: radial-gradient(black, transparent);
+    color: white;
+    position: absolute;
+    width: 185px;
+    height: 182px;
+    z-index: 50;
+    border-radius: 9%;
+    padding: 10px;
+}
+.main_block_items_customization_lighting{
+	display: none;
+}
+#openCustomizegarage{
+	cursor: pointer;
+}
+#openCustomizeLighting{
+	cursor: pointer;
+}
+.main_block_items_addRemove{
+	display: flex;
+	font-size: 30px;
+	justify-content: space-between;
+	font-weight: bold;
+	color: white;
+}
+.main_block_items_addRemove :first-child{
+	background: green;
+	border-radius: 50%;
+	width: 28px;
+    height: 30px;
+    text-align: center;
+    align-self: center;
+	cursor: pointer;
+}
+.main_block_items_addRemove :last-child{
+    background: red;
+    border-radius: 50%;
+    width: 28px;
+    height: 30px;
+    text-align: center;
+    align-self: center;
+	cursor: pointer;
+}
+.informationStatus{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+}
+.seeInfo{
+	font-size: 20px;
+	cursor: pointer;
+}
